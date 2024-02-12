@@ -1,0 +1,24 @@
+body {
+    margin: 0px;
+}
+
+.header {
+    height: 100px;
+    width: auto;
+    padding: 8px 32px;
+    background-color: #160f30;
+    color: lavenderblush;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #a72693;
+}
+
+ul {
+    font-size: large;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+}
+
