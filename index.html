@@ -12,20 +12,722 @@
 
     <div class="header">
 
-        <div class="logo">Home</div>
+        <div class="logo">
+            <a href="index.html"><img src="./img/walock-eye.png" alt="stylized eye with spikes"></img></a>
+        </div>
 
-        <ul>
-            <li>Invocations</li>
-            <li>Races and Templates</li>
-            <li>Multiclassing and Prestige Classes</li>
-            <li>Feats</li>
-            <li>Items</li>
-            <li>UMD Spells</li>
-            <li>Quick Build Guide</li>
-            <li>Warlock Concepts</li>
-            <li>Sample Builds</li>
-        </ul>
+        <div class="links">
 
+            <ul>
+                <li><a href="invocations.html">Invocations</a></li>
+                <li>Races and Templates</li>
+                <li>Multiclassing and Prestige Classes</li>
+                <li>Feats</li>
+                <li>Items</li>
+                <li>UMD Spells</li>
+                <li>Quick Build Guide</li>
+                <li>Warlock Concepts</li>
+                <li>Sample Builds</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div class="callout">
+        <div><strong>Important</strong>: I want to be clear here by saying that I didn't write any of this
+            site's content;
+            all the credit goes to Jasmine “Troacctid” Lawrence, I merely made the design of the site. No alteration was
+            made to the original text made by Jasmine; you can find the original document <a
+                href="https://docs.google.com/document/u/0/d/1xLnDuzhHsPCEz_eX0yTYIf7M5w6QnipN3lFSYmoPhbg/mobilebasic">here</a>.
+        </div>
+    </div>
+
+    <div class="title"> The Warlockopedia: A Comprehensive Warlock Handbook </div>
+    <div class="subtitle">by Jasmine “Troacctid” Lawrence</div>
+
+    <div class="introduction">
+
+        <div>Hi! My name is Jasmine, and I'm here to talk about warlocks. (Specifically, warlocks in D&D 3.5e—if you're
+            a 5e player, sorry, I'm sure there's another guide for that somewhere.)</div>
+        <div>So. Here we are. Welcome to my Warlockopedia, a fully comprehensive handbook covering everything you need
+            to know to play a warlock, whether you’re a newer player looking for advice and sample builds, a more
+            invested player looking for fresh ways to optimize, or a grizzled veteran looking for a quick reference
+            tool. The comprehensive nature of this handbook means that even non-warlocks should find it useful, too,
+            particularly the sections on items, feats, templates, and Use Magic Device.</div>
+        <div>The Warlockopedia is too large and complex to fit in the traditional handbook medium of a forum post, so it
+            is presented here as a series of documents and spreadsheets (or this site). You can also view them as
+            webpages (on the original document), which might
+            display better for some devices.</div>
+
+    </div>
+
+    <div class="title">Introduction</div>
+
+    <div class="heading">What is a Warlock?</div>
+
+    <div class="what-warlock">
+
+        <div>Story-wise, according to Complete Arcane, a warlock comes about when a powerful extraplanar entity, usually
+            a
+            chaotic and/or evil one, decides to bestow arcane might upon a mortal, giving them all sorts of dark and
+            edgy
+            powers. Later material backed off of the “dark and edgy” aspect somewhat, but warlocks are still required to
+            be
+            Chaotic or Evil, although you do not lose any class features if your alignment changes.
+
+        </div>
+
+        <div>The warlock class uses a form of innate magic known as invocations. Unlike other arcane spellcasters,
+            warlocks
+            don't have spell slots. Instead, all of their invocations are usable at will. Once you learn one, you can
+            use it
+            as much as you want without limit. The signature invocation of the warlock is eldritch blast, which allows
+            you
+            to deal a modest amount of untyped damage with a successful ranged touch attack. Other invocations are
+            divided
+            into least, lesser, greater, and dark invocations. You unlock a new category every 5 levels after 1st, and
+            over
+            the course of 20 levels, you end up getting 3 invocations from each category, plus detect magic and eldritch
+            blast. Some invocations modify your eldritch blast, altering its properties to add additional bonuses and
+            the
+            like.</div>
+
+        <div>Warlocks also have a natural knack for using magic items, gaining the ability to always take 10 on Use
+            Magic
+            Device checks at level 4 and the ability to bypass spell requirements for crafting magic items at level 12.
+            Last and definitely least, warlocks have supernatural resilience, and gain small amounts of damage
+            reduction,
+            limited fast healing, and energy resistance, which helps a little bit to make up for the squishy d6 hit die
+            they're stuck with, but not that much. Warlock base stats are like a slightly beefier sorcerer. You get a d6
+            hit die, medium base attack bonus,
+            good
+            Will saves, and 2 + Int skill points per level. It's a pretty weak chassis. In particular, warlocks tend to
+            be
+            skill-starved, but we'll get to that later.</div>
+
+
+        <div>Less experienced players and DMs sometimes balk at the warlock’s at-will abilities and overestimate the
+            class’s
+            power. This is an overreaction. Yes, they have an at-will attack, but so does any schmoe with a weapon, and
+            the
+            warlock’s doesn't deal a ton of damage. Yes, they have powerful utility abilities, but invocations are
+            scarce
+            and tend to be less individually powerful than the spells that traditional spellcasters unlock at the same
+            level. On the whole, the class is actually pretty well-balanced against the rest of the game, and could even
+            stand to be buffed a little bit. (For one thing, I’d definitely put them at 4 skill points and a d8 hit die,
+            like dragonfire adepts.) In the most recent iteration of the tier system, the warlock landed into Tier 3,
+            alongside classes like bard, duskblade, healer, swordsage, warmage, and wilder.</div>
+
+    </div>
+
+    <div class="playing-warlock">
+
+        <div class="playing-content">
+
+            <div class="heading">Playing a Warlock</div>
+
+            <div class="text">The warlock play pattern has three pillars. The first is eldritch blast. This is the most
+                visible and
+                iconic feature of the warlock. You shoot lasers. Eldritch blast is a touch attack, so most enemies will
+                have difficulty defending against it, and the damage is untyped, so energy resistance doesn't apply.
+                Spell resistance can be an issue, but otherwise, you should have a pretty good hit rate. Your invocation
+                options also include blast shape and eldritch essence invocations, which can modify your blasts, letting
+                you attach rider effects or hit multiple targets or the like.
+
+            </div>
+
+            <div class="text">Bear in mind that eldritch blast does not naturally do a whole lot of damage (unless you
+                sink a lot of
+                resources into improving it). You're not a striker. What it does do is give you a consistent source of
+                damage, turn after turn, so that you'll almost always be able to contribute in combat at least a little.
+                For the most part, the addition of blast shapes and eldritch essences won't improve your damage all that
+                much—at least not to striker levels—but with some investment, it can turn you into a reasonably potent
+                support blaster, tagging multiple enemies at a time with debuffs while also taking bites out of their
+                hit points.</div>
+
+            <div class="text">(Side note: while eldritch blast is often thought of as a laser beam, it doesn't have to
+                be. I’ve seen
+                exploding flowers, eye beams, sword beams, rocket launchers, charged playing cards, Megaman-style arm
+                cannons, cartoon hearts delivered by blowing a kiss, and least one walking Monty Python reference who
+                summoned eldritch killer rabbits to run over and very briefly savage his enemies. Don't be afraid to
+                give it your own flair. Warlock Concepts has some ideas to help inspire you.)</div>
+
+            <div class="text">The second pillar is invocations. You don't get very many of them, but the ones you do get
+                should have
+                a high impact. You can fly, teleport, turn invisible, mind-control people, command undead armies, or
+                whatever, and you can do it all day long, without any concern for conserving magical resources. This
+                tends to make warlocks very good at solving whatever specific problem they specced for. For example, if
+                you choose voracious dispelling as one of your invocations, you're gonna be really, really good at
+                making unwanted spell effects go away. If you choose flee the scene, you can teleport your way past
+                walls and obstacles with utter impunity. If you choose call of the beast, then you can talk with the
+                animals, walk with the animals, and even grunt and squeak and squawk with the animals. However, because
+                of your limited number of choices, you often end up having a very small toolbox with just a few really
+                high-quality tools.</div>
+
+            <div class="text">Invocations compete for space with eldritch blast upgrades. If you take a bunch of blast
+                shapes and
+                eldritch essences, you have less room for the powerful utility effects, and vice versa. Try and find a
+                balance as best you can according to the needs of your party.</div>
+
+            <div class="text">This brings us to the third pillar: Use Magic Device. Thanks to their 4th level ability,
+                warlocks are
+                exceptionally good at making use of wands, scrolls, and other magic items that would normally be
+                restricted by class. It's important not to overlook this aspect of the class, because it goes a long way
+                towards patching up your biggest weakness: inflexibility. Remember how I said you have a small toolbox?
+                UMD allows you to make it a lot bigger. By stocking up on wands and scrolls of useful spells, you can
+                vastly expand your options and make yourself a greater asset to your party. The level 12 crafting
+                ability falls under this pillar as well, although because it comes online so late and is limited by feat
+                selection, it's not quite as core to the class.</div>
+
+            <div class="text">Oh, and you get some skills too, although not very many. Most warlocks should prioritize
+                Concentration,
+                Spellcraft, and Use Magic Device, but if you can find room, you might also have some social skills with
+                Bluff, Intimidate, and/or Sense Motive, or some scholarly aptitude with Knowledge (arcana, planes,
+                and/or religion).</div>
+
+            <div class="text">As a whole, warlock is a relatively simple class to play. You can always pew-pew with
+                lasers, and
+                you have some other powers that tend to be fairly straightforward. It's hard to screw up too badly,
+                because there's a natural baseline level of competency inherent in the progression. (Even if all
+                you're doing is hitting a single target with touch attacks for a few d6 of damage a turn, you're
+                definitely underperforming, but at least you're not totally useless). The trickiest bit is that
+                third pillar. Magic items can really elevate your game if you use them effectively, but managing
+                your wealth can require some finesse.</div>
+
+            <div class="heading">Melee Warlocks</div>
+
+            <div class="text">Warlocks can also function as melee brawlers via one of several methods. The hideous blow
+                invocation
+                allows you to add your eldritch blast damage to a melee weapon attack. The eldritch glaive invocation
+                from Dragon Magic allows you to make a full attack in melee with your eldritch blast as if it were a
+                reach weapon. The Eldritch Claws feat from Dragon Magazine #358 allows you to use a free action to
+                change your eldritch blast into a pair of claws, which can be used as primary natural attacks and deal
+                damage equal to your eldritch blast damage plus your unarmed strike damage. And finally, the somewhat
+                dubious Grappling Blast feat, also from Dragon #358, allows you to discharge an eldritch blast along
+                with each successful grapple check you make to deal damage.
+            </div>
+
+            <div class="text">If you invest in melee combat, you can achieve substantially higher single-target damage
+                than your
+                ranged counterparts, either by adding Strength and weapon bonuses with hideous blow, making multiple
+                attacks with eldritch glaive, or a little of both with Eldritch Claws. I’ll cover some of these styles
+                in bits and pieces elsewhere in the guide. <a
+                    href="https://forums.giantitp.com/showthread.php?159708-Shinken-s-Guide-to-Melee-Warlocks&styleid=3">Shinken’s
+                    Guide to Melee Warlocks</a> offers a more focused look
+                into the topic.</div>
+
+        </div>
+
+
+        <div class="ability-scores">
+
+            <div><a>Ability Scores</a></div>
+
+            <div>Dexterity determines your attack bonus with your ranged blasts. Charisma determines the save DC of your
+                invocations. Intelligence provides skill points. Constitution prevents you from dying to a stiff breeze.
+                These are the four key ability scores that you want. Wisdom is not important. Strength is usually not
+                important unless you’re a melee-focused build, in which case you probably want as much Strength as they
+                can get, so basically Strength is going to either be your highest stat or your lowest. Which ability
+                scores you prioritize will depend on your playstyle.
+
+            </div>
+
+            <div><strong>Strength</strong> allows you to use hideous blow or Eldritch Claws to smash faces in close
+                combat. These builds
+                can output more single-target damage than a traditional ranged warlock, but require more investment, and
+                will put more pressure on your ability scores and feat slots. (Eldritch glaive also uses Strength, but
+                only for the attack roll, not the damage, so you don't need it as much.) Make Strength your highest stat
+                if you want to get up close and personal and don't mind building around that strategy.</div>
+
+            <div><strong>Dexterity</strong> supports a blasting-based strategy. It improves your accuracy as well as
+                your AC, initiative,
+                and Reflex saves, making it useful for both offense and defense. Builds that center on eldritch blast as
+                a ranged attack will usually have Dexterity as their highest or second-highest stat. All builds, of
+                course, will still want as much Dexterity as they can afford.</div>
+
+            <div><strong>Charisma</strong> is used for save DCs. Unlike traditional spellcasters, warlocks don't get
+                bonus spells for a
+                high ability score, nor do they need a minimum score in their key ability in order to cast spells, which
+                means you don't necessarily need Charisma. If you aren't investing in social skills and none of your
+                invocations require a saving throw, you can basically dump Charisma entirely (although it does still
+                affect your Use Magic Device bonus). That said, there are quite a few powerful invocations that do allow
+                a save. Without Charisma, it'll be that much more difficult to get any debuff effects to land.
+                Accordingly, if you want to disrupt and debuff your enemies, Charisma should be either your highest or
+                second-highest stat.</div>
+
+            <div><strong>Intelligence</strong> provides you with additional skill points. This is important because
+                warlocks really need
+                those skill points. Concentration, Spellcraft, and Use Magic Device are baseline competencies for a
+                warlock, and that's already more than your 2 per level. If you want to have access to knowledges and
+                social skills and prestige classes without nerfing your skill-dependent class features, you're going to
+                need a good Intelligence score. Making Intelligence your highest stat will give you greater versatility,
+                enabling you to solve a wider range of problems for your party. Even if it's not your highest stat,
+                higher is always better, because I guarantee you will never not want more skill points.</div>
+
+            <div><strong>Constitution</strong> is never going to be a primary stat, but it is always going to be
+                important, because out
+                of all the ability scores, it's the only one that will straight up kill your character if you skimp too
+                much on it. You don't want to get one-shotted by a lucky crit or a failed Reflex save. I usually make
+                Constitution my second or third highest stat, and in point buy, I try to buy it up to 14 if possible.
+            </div>
+
+            <div><strong>Wisdom</strong> is a dump stat. You have a pact with an eldritch being from beyond the veil of
+                reality. Sanity
+                schmanity.</div>
+
+        </div>
+
+
+
+    </div>
+
+    <div class="heading">Skills</div>
+
+    <div class="what-warlock">It is a sad fact of the universe that there are never enough skill points, but few classes
+        feel
+        their absence so greatly as the warlock does. There are a lot of skills that you want, and you get a criminally
+        low allotment of points to buy them with.
+        <br>
+        Skills in italics are trained-only.
+    </div>
+
+    <div class="title">Class Skills</div>
+
+    <div class="skill-container">
+
+        <div class="skill">
+            <div class="text"><strong style="color: blue;">Bluff (Cha):</strong> A high Bluff skill can make you an
+                all-star in social encounters. It turns out a
+                lot of problems can be solved by lying, provided people believe you. Who knew? It’s fairly easy to
+                outpace
+                the Sense Motive checks of NPCs who don’t invest in it, and while it’s not ideal in the long-term
+                (they’ll
+                figure out they were duped eventually), it can bypass a lot of encounters while creating hilarious
+                stories.
+                There are also some relatively cheap ways to get very large bonuses to Bluff, like the glibness spell
+                (+30),
+                the conceal thoughts psionic power (+10), and the Spawn of the Dark Prince feat (+10).</div>
+        </div>
+        <div class="skill">
+            <div class="text"><strong style="color: blue;">Concentration (Con):</strong> This is one of the most
+                important skills for any caster.
+                Concentration
+                allows you to cast defensively to avoid attacks of opportunity if you get caught in melee, and it
+                prevents
+                you from losing your spell if you’re distracted or damaged during the casting. There will be a lot of
+                fights
+                where you never need to roll a single Concentration check and it doesn’t come up at all, but there will
+                also
+                be fights where you will waste your whole turn and be completely useless if you can’t hit a DC 20. You
+                can
+                risk it if you’re feeling lucky, but the bad scenario happens often enough and is so devastating that
+                you
+                really want to invest ranks here—at least enough to be able to reliably cast your invocations
+                defensively.
+                It doesn’t necessarily need to be maxed, and items like the tunic of steady spellcasting can help, but
+                if
+                you dump this skill, you do so at your own risk. Don't say I didn't warn you.</div>
+        </div>
+        <div class="skill">
+            <div class="text"><strong style="color: red;"> Craft (Int):</strong> Just buy the stuff, or hire an expert
+                to craft it for you.</div>
+        </div>
+        <div class="skill">
+            <div class="text"><strong style="color: red;"> Disguise (Cha):</strong> If you need to disguise yourself,
+                it’s usually more efficient to rely on
+                magic like disguise self. You shouldn’t be putting points into the skill itself unless you need it for a
+                prerequisite e.g. for chameleon. Not that it doesn't have its uses occasionally, but it's clearly worse
+                than
+                Bluff and you're not made of skill points.</div>
+        </div>
+        <div class="skill">
+            <div class="text"><strong style="color: #ff00ff;"> Intimidate (Cha):</strong> Using demoralization to stack
+                up levels of fear on enemies is a real
+                strategy, but it requires you to be in melee, so most warlocks won’t be able to use it effectively. The
+                main
+                combo is with frightful blast: hit them with the fear effect from your blast, then follow up with a
+                demoralize (hopefully as a move action with fearsome armor or the Steely Gaze feat) to escalate them
+                from
+                shaken to frightened, forcing them to flee. The other use is with the Imperious Command feat, which
+                causes
+                them to cower for a round when you successfully demoralize them. As a social skill, though, I usually
+                find
+                Intimidate to be generally worse than Bluff, and you probably won’t have enough resources to take both.
+            </div>
+        </div>
+        <div class="skill">
+            <div class="text"><strong style="color: red;"> Jump (Str):</strong> You could jump...or you could just fly
+                or teleport instead. If you have a
+                charger
+                in your party, you can take 1 rank to help qualify your team for the Crowded Charge teamwork benefit
+                (Player’s Handbook II), but that’s about the extent of the skill’s usefulness IMO.</div>
+        </div>
+        <div class="skill">
+            <div class="text"><em><strong style="color: blue;"> Knowledge (arcana) (Int):</em></strong> This is the
+                Knowledge skill that deals with constructs,
+                dragons,
+                and magical beasts, as well as general arcane magic stuff that isn’t already handled under Spellcraft.
+                Magical beasts are reasonably common, and their abilities vary widely from beast to beast, so being able
+                to
+                identify them on sight is very valuable. Constructs are often a warlock’s bane, and knowing which ones
+                are
+                going to be immune to your abilities can save you from wasting your actions. Dragons aren’t as important
+                to
+                know about, since most of them fall under the umbrella of “Big flying reptile with natural attacks and a
+                breath weapon,” but it can still be handy to know which element goes with which dragon. All told, Arcana
+                is
+                probably the most useful of all the Knowledge skills. I always try to fit in at least 5 points to get
+                the
+                synergy bonus to Spellcraft.</div>
+        </div>
+        <div class="skill">
+            <div class="text"><em><strong style="color: blue;">Knowledge (the planes) (Int):</em></strong> This is the
+                Knowledge skill that covers outsiders
+                and
+                elementals, as well as the overall nature of the cosmos. Outsiders, like magical beasts, vary widely in
+                ability and appearance, so it’s useful to know what they can do, although they’re not usually as common
+                in
+                most campaigns (at least not until high levels). Elementals, you want to know the basic traits, but you
+                can
+                probably deduce most of the important stuff just by looking at them (“Fire hot. Water wet.” Etc.).
+                Normally
+                I’d value this skill lower than Arcana, but you need 12 ranks of it for hellfire warlock, one of the
+                strongest warlock prestige classes, so it ends up showing up in more builds than it otherwise might.
+            </div>
+        </div>
+        <div class="skill">
+            <div class="text"><em><strong style="color: blue;">Knowledge (religion) (Int):</em></strong> The only
+                creature type covered here is undead, but
+                undead are
+                some of the most common evil minions around, so you'll see a lot of them in most campaigns, especially
+                if
+                you're doing a lot of dungeon crawls. Module writers love them because they represent unambiguously evil
+                punching bags for the PCs to fight, and as a result, you can't walk through a sewer or a crypt or an
+                ancient
+                ruin without tripping over a dozen zombies, skeletons, or ghouls. Now, a little bit of Knowledge
+                (religion)
+                goes a long way, because half the battle is knowing the basic undead traits—but with more ranks, you'll
+                also
+                know things like whether this form of undeath is contagious (and if so, how to prevent its spread),
+                whether
+                this creature requires extra steps to lay it to rest permanently (and if so, what they are), and so on.
+            </div>
+        </div>
+        <div class="skill">
+            <div class="text"><em><strong style="color: red;">Profession (Wis):</em></strong> Great for establishing
+                backstory stuff, but it also doesn’t
+                really do
+                anything, so it’s pretty underpowered.</div>
+        </div>
+        <div class="skill">
+            <div class="text"><strong style="color: black;"> Sense Motive (Wis):</strong> I like being able to read
+                people. It’s a solid social skill. It’s also
+                not a very proactive one. If the other good skills are already covered by the rest of the party, I might
+                invest in Sense Motive, but it’s hard to find space, and when skill points are tight, the “Nice to have”
+                skills will always lose out to the “Must have” skills. If you happen to have Diplomacy, though, Sense
+                Motive
+                can provide a synergy bonus.</div>
+        </div>
+        <div class="skill">
+            <div class="text"><em><strong style="color: blue;">Spellcraft (Int):</em></strong> This is the skill used
+                for identifying magical effects. Since
+                you have
+                detect magic at will, you can bet you’ll be identifying a lot of magical effects, and the DCs can climb
+                up
+                pretty high, which means Spellcraft is at a premium. Also, this game just has a lot of spells in it, and
+                even without detect magic, being able to know all the details of your enemies’ spells just by paying
+                attention to components as they cast it is a major advantage that will serve you well over the course of
+                your career. Furthermore, you need to make a Spellcraft check to identify scrolls before you can use
+                them,
+                so it’s an important complement to Use Magic Device. Oh, and it serves as the prerequisite to several
+                nifty
+                teamwork benefits. I think Spellcraft is one of the most important skills for a warlock, and I pretty
+                much
+                always try to keep it maxed.</div>
+        </div>
+        <div class="skill">
+            <div class="text"><em><strong style="color: blue;">Use Magic Device (Cha):</em></strong> A core warlock
+                skill. You need Use Magic Device in order
+                to use some
+                of your class features. Deceive item lets you take 10 on UMD, and imbue item lets you make a UMD check
+                to
+                bypass spell requirements when crafting magic items. Often, you’ll be looking to hit a specific DC here,
+                with DC 20 for wands being the most common benchmark. But the DCs keep climbing up there—standard scroll
+                DCs
+                range from 21–37, for example—so you get more mileage by having a higher modifier. And if you have a
+                familiar (which I recommend, since familiars are great), they share your ranks, but not your ability to
+                take
+                10, so you’ll want as many ranks as possible for their sake. In short, more is better, but you should at
+                least have a high enough bonus to hit a DC 20 when you take 10.</div>
+        </div>
+
+    </div>
+
+    <div class="title">Cross-Class Skills</div>
+
+    <div class="skill-container2">
+        <div class="skill">
+
+            <div class="text"><strong style="color: red;"><em> Appraise (Int):</em></strong> I personally think Appraise
+                is a little underrated, and I like to have the single rank to count as trained. But realistically, the
+                benefit is marginal enough and the DCs low enough that there’s not much reason to invest any ranks
+                beyond that. Maybe get a wand of appraising touch instead.</div>
+        </div>
+        <div class="skill">
+            <div class="text"><strong style="color: blue;"><em> Autohypnosis (Wis):</em></strong> This skill (from
+                Expanded Psionics Handbook) gives you perfect recall of a full page’s worth of text or symbols with a DC
+                15 check. That’s not hard to hit (especially since 5 ranks in Concentration gives you a +2 synergy
+                bonus), and memorizing stuff can come in handy. Autohypnosis checks can also help you stabilize more
+                easily when you’re dying and retry saving throws against fear effects, both of which are valuable. A
+                little investment here can go a long way, especially if you have the Able Learner feat.</div>
+        </div>
+        <div class="skill">
+            <div class="text"><strong style="color: red;">Balance (Dex):</strong> Mostly useless. 5 ranks prevents you
+                from being flat-footed while balancing, and 10 ranks allows you to use a Balance check to oppose a trip
+                attempt (as per Rules Compendium page 145), but it’s cross-class, usable untrained, and becomes obsolete
+                as soon as you gain the ability to fly, so, bleh.</div>
+        </div>
+        <div class="skill">
+            <div class="text"><strong style="color: red;">Climb (Str):</strong> Like Balance, it quickly becomes
+                obsolete once you can fly, but it’s actually even worse than that, because it also becomes obsolete once
+                you can spider climb. And even if you can’t do either, the best climber in the party can usually go
+                first and drop down a rope ladder to make it easy for everyone else. 👎</div>
+        </div>
+        <div class="skill">
+            <div class="text"><strong style="color: red;"><em>Decipher Script (Int):</em></strong> This is the sort of
+                skill that you might use once or twice in an entire campaign. It’s rarely ever called for, and is mostly
+                useful for the +2 synergy bonus it adds to Use Magic Device checks involving scrolls, if that.</div>
+        </div>
+        <div class="skill">
+            <div class="text"><strong style="color: blue;">Diplomacy (Cha):</strong> I’d call this an even more powerful
+                social skill than Bluff. It’s exceptionally valuable for interacting with NPCs, and if you optimize for
+                it, you can even use it mid-combat to pacify your enemies. Sadly, its cross-class nature makes it
+                difficult to work with for most builds, but if you have the Able Learner feat or some way to make it a
+                class skill, you can make it work.</div>
+        </div>
+        <div class="skill">
+            <div class="text"><strong style="color: red;"><em>Disable Device (Int):</em></strong> Even if you somehow
+                had
+                trapfinding, it would still be better to use magical means to bypass traps in most cases.</div>
+        </div>
+        <div class="skill">
+            <div class="text"><strong style="color: red;">Escape Artist (Dex):</strong> Most warlocks dump Strength,
+                which can make it difficult to avoid and escape grapples. Escape Artist can help—but if you don’t keep
+                it maxed, then it will get outpaced by your BAB anyway. You should have a plan in place for if you get
+                grappled, but for my part I prefer for that plan to be something like a ring of free movement or anklet
+                of translocation.</div>
+        </div>
+        <div class="skill">
+            <div class="text"><strong style="color: red;"><em>Forgery (Int):</em></strong> I still can’t believe there’s
+                a whole skill for this. It’s bad, of course. If you need a forgery made, pay a hireling to do it. You'd
+                have to be in a really specific campaign for this to be any good.</div>
+        </div>
+        <div class="skill">
+            <div class="text"><strong style="color: red;">Gather Information (Cha):</strong> Sometimes this skill can
+                help you uncover extra clues in an investigation, but the DCs are rarely high enough to reward any
+                substantial investment, especially since you can use it untrained.</div>
+        </div>
+        <div class="skill">
+            <div class="text"><strong style="color: red;"><em>Handle Animal (Cha):</em></strong> Okay, so here’s the
+                thing about Handle Animal. It’s actually a pretty solid skill. You can get some pet dogs or a bird or
+                whatever and train them into capable minions. Maybe you even find an abandoned wolf cub during your
+                adventures and you rear it as a party mascot. But as a warlock, if that’s something you’re interested
+                in, you can usually just take call of the beast as an invocation and make the whole skill pretty much
+                irrelevant.</div>
+        </div>
+        <div class="skill">
+            <div class="text"><strong style="color: red;">Heal (Wis):</strong> This skill is used for stabilizing dying
+                characters and that’s basically it. Occasionally you'll diagnose a disease or learn the cause of death
+                for a corpse. It can be used untrained and the DCs are low, so there’s not much reason to take ranks in
+                it unless you’re trying to prestige into nosomatic chirurgeon.</div>
+        </div>
+        <div class="skill">
+            <div class="text"><strong style="color: #ff00ff;">Hide (Dex):</strong> If this were a class skill, it would
+                be very strong in combination with the Blend into Shadows feat, which allows you to make a Hide check as
+                a swift action to hide in plain sight. As is, it’s actually surprisingly tricky to get it as a class
+                skill without multiclassing (especially if you don’t have access to Dragon Magazine for the Flexible
+                Mind feat), which means only dedicated stealth builds will get any use from it. If you can make it work,
+                though, the payoff is there.</div>
+        </div>
+        <div class="skill">
+            <div class="text"><strong style="color: red;"><em>Knowledge (architecture and engineering)
+                        (Int):</em></strong> It’s not a monster knowledge skill and it’s frankly not very useful in
+                general, outside of figuring out which walls in a structure are load-bearing. I’d honestly rather take
+                Profession (architect) or Profession (engineer). At least it’s a class skill.</div>
+        </div>
+        <div class="skill">
+            <div class="text"><strong style="color: black;"><em>Knowledge (dungeoneering) (Int):</em></strong> This
+                skill notably covers aberrations and oozes, both of which are nice to be able to identify, but its
+                cross-class status makes it less appealing than arcana, planes, or religion.</div>
+        </div>
+        <div class="skill">
+            <div class="text"><strong style="color: red;"><em>Knowledge (geography) (Int):</em></strong> It’s weird to
+                me that this is its own skill instead of being part of Nature. Anyway, it’s one of the bad Knowledges,
+                so skip it.</div>
+        </div>
+        <div class="skill">
+            <div class="text"><strong style="color: red;"><em>Knowledge (history) (Int):</em></strong> While this one
+                can actually give you useful information, I still don’t like it because of how easily a
+                Knowledge-centric build could just take paragnostic apostle levels and get the Lore ability basically
+                free, which does the same thing.</div>
+        </div>
+        <div class="skill">
+            <div class="text"><strong style="color: #ff00ff;"><em>Knowledge (local) (Int):</em></strong> Outside of the
+                Knowledge Devotion feat, you don’t usually have much call for a monster knowledge check relating to
+                humanoids, which is what Knowledge (local) covers. They hardly ever have any special abilities that you
+                care about, with the exception of obscure races like ushemoi. On the other hand, if you do have
+                Knowledge Devotion, then this is one of the most important Knowledges because of how common it is to
+                encounter humanoids.</div>
+        </div>
+        <div class="skill">
+            <div class="text"><strong style="color: black;"><em>Knowledge (nature) (Int):</em></strong> Another solid
+                monster knowledge skill, covering animals, plants, vermin, fey, giants, and monstrous humanoids. That’s
+                a pretty wide selection. Like dungeoneering, it only really suffers from being cross-class.</div>
+        </div>
+        <div class="skill">
+            <div class="text"><strong style="color: #ff00ff;"><em>Knowledge (nobility and royalty) (Int):</em></strong>
+                The skill itself is pretty weak, but if you have 5 ranks, you get a +2 synergy bonus to Diplomacy.</div>
+        </div>
+        <div class="skill">
+            <div class="text"><strong style="color: black;">Listen (Wis):</strong> Perception skills are valuable, but
+                for the most part it’s not your job to be good at them. Make someone else do it. If nobody else wants to
+                do it, then get a familiar to do it, or pick up serpent’s tongue as a least invocation and call it good.
+            </div>
+        </div>
+        <div class="skill">
+            <div class="text"><strong style="color: #ff00ff;">Move Silently (Dex):</strong> In a sense, it's better than
+                Hide, because you can already get a zillion Hide by being invisible and/or small. In another sense, it's
+                worse than Hide because the main draw to Hide is the Blend into Shadows feat, which doesn't reward you
+                for Move Silently at all—which means it's conceivable that even some stealthy builds don't really need
+                the skill.</div>
+        </div>
+        <div class="skill">
+            <div class="text"><strong style="color: black;"><em>Open Lock (Dex):</em></strong> The skill itself is of
+                limited use, especially if you take flee the scene to (essentially) ignore doors or pick up a couple
+                scrolls or a wand of knock. However, taking a single rank is nice because just being able to count as
+                trained is often good enough to unlock a door by taking 20, especially if you have a high Dex and some
+                generic skill boosts.</div>
+        </div>
+        <div class="skill">
+            <div class="text"><strong style="color: red;"><em>Perform (Cha):</em></strong> Useless except for
+                prerequisites.</div>
+        </div>
+        <div class="skill">
+            <div class="text"><strong style="color: red;">Ride (Dex):</strong> Mounted combat is usually not the
+                warlock's forte, but it has its advantages. Those advantages generally don't require a ton of ranks in
+                Ride, given how relatively rare it is to actually need better than a DC 5. As nice as it is to mount or
+                dismount as a free action with a DC 20 check, I don't think it's worth investing in a cross-class skill.
+            </div>
+        </div>
+        <div class="skill">
+            <div class="text"><strong style="color: red;">Search (Int):</strong> Warlocks traditionally find traps with
+                detect magic rather than with skill checks, so Spellcraft takes the place of Search. Likewise for many
+                hidden items. Secret doors and clues and such, maybe not, but hopefully you can leave this particular
+                job to the classes that have it as a class skill, or get detect secret doors via magic items. Or just
+                don't worry about it. Either way, not worth investing in, outside of the rare multiclass rogue build.
+            </div>
+        </div>
+        <div class="skill">
+            <div class="text"><strong style="color: red;"><em>Sleight of Hand (Dex):</em></strong> This is a cool skill,
+                but I think you need to invest a lot into it in order to use it reliably, and that isn't practical
+                cross-class. Even if you get it as a class skill somehow, there will likely be better places to put your
+                points. It's not a bad skill per se, but it's niche enough that it shouldn't be valued too highly.</div>
+        </div>
+        <div class="skill">
+            <div class="text"><strong style="color: #ff00ff;"><em>Speak Language:</em></strong> Extra languages are very
+                valuable if you're investing into Bluff or Diplomacy or just taking the charm invocation (which is
+                language-dependent). Ideally, you want to handle the language barrier with magic, either telepathy or
+                tongues. But if you prefer the old-fashioned way, there’s nothing wrong with dropping some points into
+                Speak Language.</div>
+        </div>
+        <div class="skill">
+            <div class="text"><strong style="color: black;">Spot (Wis):</strong> See Listen.</div>
+        </div>
+        <div class="skill">
+            <div class="text"><strong style="color: red;">Survival (Wis):</strong> Tracking is niche, navigating in the
+                wilderness rarely matters, foraging for food is easy enough to do untrained, and intuiting directions
+                and predicting the weather are cute but not important in the context of most adventures. It's not a
+                useless skill, but there isn't much reason for you to care about it.</div>
+        </div>
+        <div class="skill">
+            <div class="text"><strong style="color: red;">Swim (Str):</strong> While I appreciate the importance of not
+                drowning, since it is definitely not the way a person who fights monsters for a living is supposed to
+                die, spending cross-class skill ranks on Swim is not a good solution. Use items instead. An armor keel
+                and some masterwork flippers will get you a +4 bonus pretty cheaply, which should be enough for a
+                lightly armored character to avoid a watery grave. At higher levels, you can get a magic item that gives
+                you a swim speed.</div>
+        </div>
+        <div class="skill">
+            <div class="text"><strong style="color: black;"><em>Tumble (Dex):</em></strong> I really like the mobility
+                offered by Tumble. Combat in this game tends to be “sticky”—if you’re in melee, getting out again can be
+                difficult and painful. Tumble allows you to move around the battlefield without worrying about attacks
+                of opportunity. That’s the sort of thing that’s especially convenient if you’re relying on ranged
+                attacks as your primary combat strategy. 5-foot steps are a thing, of course, which means you don’t need
+                Tumble, but that doesn’t mean it isn’t nice to have for the times when you need to move more than 5 feet
+                at a time. Taking it cross-class isn’t really a good option, but if you have Able Learner, then sure.
+            </div>
+        </div>
+        <div class="skill">
+            <div class="text"><strong style="color: black;"><em>Use Psionic Device (Cha):</em></strong> The psionic
+                counterpart to Use Magic Device. It's fine, but UMD is better, and I'm skeptical of the value in
+                investing in both. I suppose if you have Able Learner, you could do worse, especially if your DM is
+                dropping psionic items as loot.</div>
+        </div>
+        <div class="skill">
+            <div class="text"><strong style="color: red;">Use Rope (Dex):</strong> I’m sure there’s three or four people
+                in the history of D&D who have needed this skill at some point.</div>
+        </div>
+    </div>
+
+    <div class="fix">
+
+
+        <div class="heading">Skill Tricks</div>
+        <div class="text">Skill tricks were introduced in Complete Scoundrel and expanded on in Dragon Magazine
+            #357. They can be purchased for 2 skill ranks if you meet the prerequisites, and they can be used once
+            per encounter unless otherwise stated. A full list of skill tricks can be found in <a
+                href="https://docs.google.com/spreadsheets/d/1VSz3GaCBQeXsTWTSBppmd7J0qUBg19d1KaBGGwMeyZg/edit#gid=0">
+                this spreadsheet</a>. As
+            a general rule of thumb, most skill tricks are worth taking if you qualify for them, but few of them are
+            worth going out of your way to get the prerequisites.</div>
+
+
+
+        <div class="heading">Teamwork Benefits</div>
+        <div class="text">Teamwork benefits are kind of like skill tricks, but for the whole party, and with no
+            per-encounter limit. They appear in Dungeon Master’s Guide II, Dungeonscape, Forge of War, Heroes of
+            Battle, and Player’s Handbook II. They usually have one prerequisite for the “leader” and a smaller
+            prerequisite for other team members. A full list of teamwork benefits can be found in the <a
+                href="https://docs.google.com/spreadsheets/d/1VSz3GaCBQeXsTWTSBppmd7J0qUBg19d1KaBGGwMeyZg/edit#gid=0">
+                same
+                spreadsheet</a>. Unlike skill tricks, you’re more likely to go out of your way to qualify for a teamwork
+            benefit, just because the team member requirements don’t require you to go as far out of your way. Talk
+            with your party members about which teamwork benefits will be most useful for your team.</div>
+
+        <div class="heading">Alternative Class Features</div>
+        <div class="text">There are only two alternative class features for warlocks, both of which replace fiendish
+            resilience.</div>
+        <br>
+        <div class="text"><strong style="color: red;"> Fiendish Flamewreath (PH2): </strong> Replaces fiendish
+            resilience with a fire shield that damages anyone who attacks you in melee. The damage starts at 1d6 fire
+            damage and increases at higher levels: 2d6 at level 13, and 5d6 at level 18. However, it remains usable only
+            once per day. This is...maybe okay, I guess, assuming you're a melee warlock and you're already planning to
+            be up close and personal. Even in the ideal scenario, though, I'm still not sure I wouldn't rather have the
+            healing if I’m being hit multiple times like that. Like, even if the build already has fast healing from
+            another source, multiple instances of it stack, so...meh. Just buy a crown of flames.</div>
+        <br>
+        <div class="text"><strong style="color: red;">Venomous Blood (DrU):</strong> Your blood is poisonous. At level
+            8, you get +5 to saves against poison. At level 13, anyone who bites or swallows you is subject to a poison
+            that deals 1d3 Strength damage, Fortitude DC 10 + half warlock level + Cha negates. At level 18, you can
+            apply a more concentrated version of this poison to your eldritch blast or a held weapon attack 3 times per
+            day; this takes a move action and increases the Strength damage to 1d6. I think this one is perhaps a bit
+            cooler than the other one, but still not good.</div>
+
+    </div>
+
+    <div class="footer">
+        <div>The content of this site was written by Jasmine “Troacctid” Lawrence </div>
     </div>
 
 </body>

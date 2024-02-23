@@ -1,6 +1,27 @@
 body {
     margin: 0px;
+    background-color: #eae7af;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
+
+.callout a:link {
+    color: aqua;
+}
+
+.callout a:visited {
+    color: aquamarine;
+}
+
+.header a:link {
+    color: lavenderblush;
+}
+
+.header a:visited {
+    color: lavenderblush;
+}
+
 
 .header {
     height: 100px;
@@ -9,16 +30,189 @@ body {
     background-color: #160f30;
     color: lavenderblush;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     border-bottom: 2px solid #a72693;
 }
 
+.logo img {
+    -webkit-filter: invert(1);
+    filter: invert(1);
+    flex: 1 0 auto;
+    height: 90px;
+    width: auto;
+}
+
+
+.links {
+    display: flex;
+    justify-content: center;
+    flex: 1 auto;
+}
+
 ul {
-    font-size: large;
+    font-size: x-large;
     list-style-type: none;
     display: flex;
     justify-content: space-between;
     gap: 32px;
 }
 
+.callout {
+    height: 150px;
+    width: auto;
+    font-size: 26px;
+    background-color: #241663;
+    color: lavenderblush;
+    margin: 16px;
+    padding: 8px 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.title {
+    font-size: 40px;
+    text-align: center;
+    color: #160f30;
+    text-shadow: 2px 2px 2px #a72693;
+    margin: 32px;
+}
+
+.subtitle {
+    font-size: large;
+    text-align: center;
+    color: #a72693;
+    margin-top: 8px;
+}
+
+.introduction {
+    text-align: justify;
+    font-size: large;
+    color: #160f30;
+    margin: 32px 128px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+}
+
+.heading {
+    font-size: 25px;
+    margin: 32px 32px 8px;
+    border-bottom: 2px solid #a72693;
+    color: #160f30;
+}
+
+.what-warlock {
+    text-align: justify;
+    font-size: large;
+    color: #160f30;
+    margin: 8px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+}
+
+.playing-warlock {
+    display: flex;
+    justify-content: space-between;
+}
+
+.playing-content {
+    text-align: justify;
+    font-size: large;
+    color: #160f30;
+    flex: auto;
+}
+
+.playing-content .text {
+    margin: 8px 8px 8px 32px;
+}
+
+.ability-scores {
+    background-color: #241663;
+    color: lavenderblush;
+    font-size: large;
+    padding: 24px;
+    margin: 16px;
+    max-width: 35%;
+    border-radius: 25px;
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+}
+
+.ability-scores strong {
+    color: #a72693;
+    font-weight: 900;
+}
+
+.ability-scores a {
+    font-size: xx-large;
+    color: #a72693;
+}
+
+.playing-content .heading {
+    margin: 12px 8px 8px 32px;
+}
+
+.skill-container {
+    width: 100%;
+    max-height: 900px;
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16 px;
+    flex-wrap: wrap;
+}
+
+.skill {
+    flex: 1 0 auto;
+    margin: 8px;
+    height: auto;
+    width: 850px;
+}
+
+.text {
+    text-align: justify;
+    font-size: large;
+    color: #160f30;
+}
+
+.skill-container2 {
+    width: 100%;
+    max-height: 1500px;
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16 px;
+    flex-wrap: wrap;
+}
+
+.fix {
+    margin-bottom: 32px;
+}
+
+.fix .text {
+    margin: 0px 32px;
+}
+
+.footer {
+    height: 100px;
+    margin-top: auto;
+    background-color: #160f30;
+    border-top: 2px solid #a72693;
+    color: lavenderblush;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+}
