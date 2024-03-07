@@ -217,9 +217,3 @@ ul {
     font-size: x-large;
     flex-direction: column;
 }
-
-.biblio {
-    display: flex;
-    justify-content: center;
-    margin: 32px 450px;
-}
